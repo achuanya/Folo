@@ -12,6 +12,10 @@ services:
             CACHE_TYPE: redis
             REDIS_URL: "redis://redis:6379/"
             PUPPETEER_WS_ENDPOINT: "ws://browserless:3000" # marked
+            FOLLOW_OWNER_USER_ID: "109876092687369216"
+            FOLLOW_DESCRIPTION: "游钓四方's instance"
+            FOLLOW_PRICE: "0"
+            FOLLOW_USER_LIMIT: ""
         healthcheck:
             test: ["CMD", "curl", "-f", "http://localhost:1200/healthz"]
             interval: 30s
